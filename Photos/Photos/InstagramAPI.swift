@@ -24,7 +24,8 @@ class InstagramAPI {
          */
         // FILL ME IN
         var url: NSURL
-
+        url = Utils.getPopularURL()
+        
         let task = NSURLSession.sharedSession().dataTaskWithURL(url) {
             (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             if error == nil {
